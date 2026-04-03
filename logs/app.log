@@ -1,0 +1,81 @@
+2026-04-01 11:42:38,804 INFO Added student Student(id=3, name=Halit)
+2026-04-01 11:42:38,807 INFO Saved gradebook data to data\gradebook.json
+2026-04-01 11:42:54,766 INFO Added student Student(id=4, name=Halit)
+2026-04-01 11:42:54,767 INFO Saved gradebook data to data\gradebook.json
+2026-04-01 11:43:43,444 ERROR Error while running command: Course code already exists
+Traceback (most recent call last):
+  File "C:\Users\Admin\OneDrive\Documents\gradebook_project\main.py", line 57, in main
+    code = gb.add_course(args.code, args.title)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\OneDrive\Documents\gradebook_project\gradebook\service.py", line 57, in add_course
+    raise ValueError("Course code already exists")
+ValueError: Course code already exists
+2026-04-01 11:45:25,623 ERROR Error while running command: 'Enrollment not found for student/course'
+Traceback (most recent call last):
+  File "C:\Users\Admin\OneDrive\Documents\gradebook_project\main.py", line 77, in main
+    avg = gb.compute_average(args.student_id, args.course)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\OneDrive\Documents\gradebook_project\gradebook\service.py", line 105, in compute_average
+    raise KeyError("Enrollment not found for student/course")
+KeyError: 'Enrollment not found for student/course'
+2026-04-01 11:45:35,411 INFO Student 1 already enrolled in CS101
+2026-04-01 11:45:43,654 INFO Added grade 95.0 to 1/CS101
+2026-04-01 11:45:43,655 INFO Saved gradebook data to data\gradebook.json
+2026-04-03 22:21:40,839 INFO Added student Student(id=3, name=Halit)
+2026-04-03 22:21:40,842 INFO Saved gradebook data to data\gradebook.json
+2026-04-03 22:26:02,497 INFO Added course Course(code=PHYS301, title=Machine Learning)
+2026-04-03 22:26:02,499 INFO Saved gradebook data to data\gradebook.json
+2026-04-03 22:29:31,252 INFO Enrolled student 3 in ML300
+2026-04-03 22:29:31,254 INFO Saved gradebook data to data\gradebook.json
+2026-04-03 22:31:42,701 ERROR Error while running command: 'Enrollment not found for student/course'
+Traceback (most recent call last):
+  File "C:\Users\Admin\OneDrive\Documents\gradebook_project\main.py", line 64, in main
+    gb.add_grade(args.student_id, args.course, g)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\OneDrive\Documents\gradebook_project\gradebook\service.py", line 88, in add_grade
+    raise KeyError("Enrollment not found for student/course")
+KeyError: 'Enrollment not found for student/course'
+2026-04-03 22:32:42,122 ERROR Error while running command: 'Enrollment not found for student/course'
+Traceback (most recent call last):
+  File "C:\Users\Admin\OneDrive\Documents\gradebook_project\main.py", line 64, in main
+    gb.add_grade(args.student_id, args.course, g)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\OneDrive\Documents\gradebook_project\gradebook\service.py", line 88, in add_grade
+    raise KeyError("Enrollment not found for student/course")
+KeyError: 'Enrollment not found for student/course'
+2026-04-03 22:33:35,302 ERROR Error while running command: 'Unknown course code'
+Traceback (most recent call last):
+  File "C:\Users\Admin\OneDrive\Documents\gradebook_project\main.py", line 60, in main
+    gb.enroll(args.student_id, args.course)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\OneDrive\Documents\gradebook_project\gradebook\service.py", line 68, in enroll
+    raise KeyError("Unknown course code")
+KeyError: 'Unknown course code'
+2026-04-03 22:34:10,017 ERROR Error while running command: 'Enrollment not found for student/course'
+Traceback (most recent call last):
+  File "C:\Users\Admin\OneDrive\Documents\gradebook_project\main.py", line 64, in main
+    gb.add_grade(args.student_id, args.course, g)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\OneDrive\Documents\gradebook_project\gradebook\service.py", line 88, in add_grade
+    raise KeyError("Enrollment not found for student/course")
+KeyError: 'Enrollment not found for student/course'
+2026-04-03 22:34:29,506 ERROR Error while running command: 'Unknown course code'
+Traceback (most recent call last):
+  File "C:\Users\Admin\OneDrive\Documents\gradebook_project\main.py", line 60, in main
+    gb.enroll(args.student_id, args.course)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\OneDrive\Documents\gradebook_project\gradebook\service.py", line 68, in enroll
+    raise KeyError("Unknown course code")
+KeyError: 'Unknown course code'
+2026-04-03 22:35:08,004 INFO Added course Course(code=ML 300, title=Machine Learning)
+2026-04-03 22:35:08,006 INFO Saved gradebook data to data\gradebook.json
+2026-04-03 22:36:22,706 ERROR Error while running command: 'Enrollment not found for student/course'
+Traceback (most recent call last):
+  File "C:\Users\Admin\OneDrive\Documents\gradebook_project\main.py", line 64, in main
+    gb.add_grade(args.student_id, args.course, g)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\OneDrive\Documents\gradebook_project\gradebook\service.py", line 88, in add_grade
+    raise KeyError("Enrollment not found for student/course")
+KeyError: 'Enrollment not found for student/course'
+2026-04-03 22:37:48,331 INFO Added grade 95.5 to 3/ML 300
+2026-04-03 22:37:48,334 INFO Saved gradebook data to data\gradebook.json

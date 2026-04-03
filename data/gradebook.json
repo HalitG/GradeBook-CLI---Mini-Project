@@ -1,0 +1,61 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "Halit"
+    },
+    {
+      "id": 2,
+      "name": "Fatmir"
+    },
+    {
+      "id": 3,
+      "name": "Halit"
+    }
+  ],
+  "courses": [
+    {
+      "code": "CS101",
+      "title": "Intro to CS"
+    },
+    {
+      "code": "MATH200",
+      "title": "Calculus"
+    },
+    {
+      "code": "ML 300",
+      "title": "Machine Learning"
+    }
+  ],
+  "enrollments": [
+    {
+      "student_id": 1,
+      "course_code": "CS101",
+      "grades": [
+        92.0,
+        85.0
+      ]
+    },
+    {
+      "student_id": 1,
+      "course_code": "MATH200",
+      "grades": [
+        78.0
+      ]
+    },
+    {
+      "student_id": 2,
+      "course_code": "CS101",
+      "grades": [
+        88.0
+      ]
+    },
+    {
+      "student_id": 3,
+      "course_code": "ML 300",
+      "grades": [
+        95.5
+      ]
+    }
+  ]
+}
